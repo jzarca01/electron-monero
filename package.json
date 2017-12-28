@@ -1,0 +1,20 @@
+{
+  "name": "electron-monero",
+  "version": "1.0.0",
+  "description": "Mine monero from mac",
+  "author": "Jérémie Zarca",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron ./app --enable-logging",
+    "dev": "NODE_ENV='development' npm run start",
+    "dist": "build -l"
+  },
+  "devDependencies": {
+    "electron": "~1.7.8",
+    "electron-builder": "^19.49.2",
+  },
+  "dependencies": {
+    "menubar": "^5.2.3"
+  }
+}
