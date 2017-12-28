@@ -8,7 +8,7 @@
     "postinstall": "install-app-deps",
     "start": "electron ./app --enable-logging",
     "dev": "NODE_ENV='development' npm run start",
-    "dist": "build -l"
+    "dist": "build -wml --x64 --ia32"
   },
   "devDependencies": {
     "electron": "~1.7.8",
